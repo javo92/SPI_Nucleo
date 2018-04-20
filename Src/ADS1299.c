@@ -313,7 +313,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8
 		
 	 long_data.dato = 0;
 	 
-		if (data_23_16>0x80)
+		if (data_23_16>=0x80)
 		{
 			long_data.split.b[2] = ~data_23_16;
 			long_data.split.b[1] = ~data_15_8;
