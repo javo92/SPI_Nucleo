@@ -27,11 +27,16 @@ Project File Date:  04/16/2018
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'SPI_Nucleo'
-compiling main.c...
+compiling ADS1299.c...
+..\Src\ADS1299.c(432): warning:  #177-D: variable "debug"  was declared but never referenced
+  		int debug = 255;
+..\Src\ADS1299.c(492): warning:  #550-D: variable "pre_anterior"  was set but never used
+  		float pre_anterior = 0x00;
+..\Src\ADS1299.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=30452 RO-data=472 RW-data=216 ZI-data=4992  
+Program Size: Code=30572 RO-data=472 RW-data=216 ZI-data=4992  
 FromELF: creating hex file...
-".\SPI_Nucleo\SPI_Nucleo.axf" - 0 Error(s), 0 Warning(s).
+".\SPI_Nucleo\SPI_Nucleo.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -49,7 +54,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Build Time Elapsed:  00:00:08
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

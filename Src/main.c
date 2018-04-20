@@ -204,16 +204,22 @@ int main(void)
 	config[2] = PD_REFBUF | CONFIG3_reserved | BIASREF_INT | PD_BIAS;
 	config[3] = PD_LOFF_COMP;
 	
-	config_channel [0] = TEST_SIGNAL | GAIN_12X;
-	config_channel [1] = TEST_SIGNAL | GAIN_12X;
-	config_channel [2] = TEST_SIGNAL | GAIN_12X;
-	config_channel [3] = TEST_SIGNAL | GAIN_12X;
-	config_channel [4] = TEST_SIGNAL | GAIN_12X;
-	config_channel [5] = TEST_SIGNAL | GAIN_12X;
-	config_channel [6] = TEST_SIGNAL | GAIN_12X;
-	config_channel [7] = TEST_SIGNAL | GAIN_12X;
+	config_channel [0] = TEST_SIGNAL | GAIN_24X;
+	config_channel [1] = TEST_SIGNAL | GAIN_24X;
+	config_channel [2] = TEST_SIGNAL | GAIN_24X;
+	config_channel [3] = TEST_SIGNAL | GAIN_24X;
+	config_channel [4] = TEST_SIGNAL | GAIN_24X;
+	config_channel [5] = TEST_SIGNAL | GAIN_24X;
+	config_channel [6] = TEST_SIGNAL | GAIN_24X;
+	config_channel [7] = TEST_SIGNAL | GAIN_24X;
 	
 	configADS(config, config_channel, &hspi2, &huart4);
+	
+	uint8_t gain[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+	for (int i = 0; i<8; i++)
+	{
+		gain[i] = calcular_ganancia(config_channel[i]);
+	}
 	
 	//==============================================================
 
@@ -243,7 +249,12 @@ int main(void)
 				config_channel[i] = commandFromESP(command, &hspi1);
 			}
 			configADS(config, config_channel, &hspi2, &huart4);
-		
+			
+			for (int i = 0; i<8; i++)
+			{
+				gain[i] = calcular_ganancia(config_channel[i]);
+			}
+			
 			command = 0x00;
 			
 		break;
@@ -258,7 +269,7 @@ int main(void)
 				
 			for (int i = 1; i<=8; i++)
 			{					
-			data2ESP = byte2float(data[i*3], data[i*3 +1], data[i*3 + 2]);
+			data2ESP = byte2float(data[i*3], data[i*3 +1], data[i*3 + 2], gain[i]);
 			float2ESP (data2ESP, &hspi1);
 			}
 			//adc_wreg(GPIO, 0x1C,&hspi2);				// Led 1 off, led 2 on			
@@ -273,7 +284,7 @@ int main(void)
 		
 		case (0x02):	// Lectura continua de datos y envío al ESP
 			
-			adquire_array_data (data, channel_1, 1, &hspi2, &huart4);
+			adquire_array_data (data, channel_1, 1, gain[0], &hspi2, &huart4);
 			
 //			one_shot_array (data, channel_1, 1, &hspi2, &huart4);
 			
