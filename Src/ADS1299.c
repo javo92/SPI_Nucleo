@@ -91,14 +91,15 @@ void adc_wreg(uint8_t reg, uint8_t val, SPI_HandleTypeDef *SPI)
 
 void read_data_frame(uint8_t data [], SPI_HandleTypeDef *SPI)
 {
-	uint8_t zero = 0x00;
+	uint8_t zero [27] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+	
 	// IPIN_MASTER_CS	
 //		HAL_GPIO_WritePin(A_CS0_N_GPIO_Port, A_CS0_N_Pin, GPIO_PIN_RESET);
 //		HAL_SPI_Receive(SPI, data, 27, 100);
-			for(int i = 0; i<27; i++)
-			{
-				HAL_SPI_TransmitReceive(SPI, &zero, &data[i], 1, 100);
-			}
+//			for(int i = 0; i<27; i++)
+//			{
+				HAL_SPI_TransmitReceive(SPI, zero, data, 27, 100);
+//			}
 		//HAL_Delay(1);	// is this needed? Yes, it requires a 4Tclk = 0.2ms wait.
 	
 //		HAL_GPIO_WritePin(A_CS0_N_GPIO_Port, A_CS0_N_Pin, GPIO_PIN_SET);
@@ -298,7 +299,7 @@ void print_chip_id(SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 		//};
 
 			
-float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
+float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8_t ganancia)
 	{
 		float value = 0;
 		
@@ -328,7 +329,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 			value = long_data.dato;
 		}
 		
-		value = value*4.5f/201326568.0f;
+		value = value*4.5f/(8388607.0f*ganancia);
 		
 		return value;
 	}
@@ -426,7 +427,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 }
 		
 	
-	void adquire_array_data (uint8_t data[], float channel_X[], uint8_t channel, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
+	void adquire_array_data (uint8_t data[], float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 	{
 		int debug = 255;
 		// read 250 samples
@@ -441,7 +442,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 		
 		read_data_frame(data, SPI);
 			
-		channel_X[0] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2]);
+		channel_X[0] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2], gain);
 			
 		while (HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_RESET){}
 			
@@ -451,7 +452,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 			
 			read_data_frame(data, SPI);
 
-			channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2]);
+			channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2], gain);
 				
 			while (HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_RESET){}
 		}
@@ -483,7 +484,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 			update_bias_ref(data, SPI);
 }
 	
-		void one_shot_array (uint8_t data[],float channel_X[], uint8_t channel, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
+		void one_shot_array (uint8_t data[],float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 	{
 		uint8_t zero = 0x00;
 		uint8_t cmd = RDATA;
@@ -503,10 +504,10 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 				
 				read_data_frame(data, SPI);
 			
-				channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2]);
+				channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2], gain);
 				//while (HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_RESET) {}			
 				if (i==0){
-					pre_anterior = channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2]);
+					pre_anterior = channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2], gain);
 				}
 //				else if (i==1){
 //					anterior = channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2]);
@@ -528,7 +529,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 				
 				read_data_frame(data, SPI);
 			
-				channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2]);
+				channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2], gain);
 				//while (HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_RESET) {}			
 					
 				HAL_GPIO_WritePin(A_CS0_N_GPIO_Port, A_CS0_N_Pin, GPIO_PIN_SET);
@@ -543,6 +544,42 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0)
 				}
 			}
 		}
+}
+	
+uint8_t calcular_ganancia (uint8_t config_channel)
+{
+	uint8_t ganancia = 12;
+	
+	switch (config_channel&(0x70))
+		{
+		case (0x00):
+			ganancia = 1;
+		break;
+		
+		case (0x10):
+			ganancia = 2;
+		break;
+		
+		case (0x30):
+			ganancia = 4;
+		break;
+		
+		case (0x40):
+			ganancia = 8;
+		break;
+		
+		case (0x50):
+			ganancia = 12;
+		break;
+		
+		case (0x60):
+			ganancia = 24;
+		break;
+		
+		default:
+			ganancia = 24;
+		}
+	return ganancia;
 }
 	
 /*****************************END OF FILE*****************************/

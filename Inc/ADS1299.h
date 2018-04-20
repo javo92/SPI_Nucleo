@@ -147,13 +147,13 @@
 
 #define		CHnSET_const  0x00
 
-#define		GAIN_1X  GAINn0
-#define		GAIN_2X  GAINn1
-#define		GAIN_3X  (GAINn1 | GAINn0)
-#define		GAIN_4X  GAINn2
-#define		GAIN_6X  0x00
-#define		GAIN_8X  (GAINn2 | GAINn0)
-#define		GAIN_12X  (GAINn2 | GAINn1)
+#define		GAIN_1X  	0x00
+#define		GAIN_2X  	0x10
+#define		GAIN_4X  	0x20
+#define		GAIN_6X  	0x30
+#define		GAIN_8X  	0x40
+#define		GAIN_12X  0x50
+#define		GAIN_24X  0x60
 
 #define		ELECTRODE_INPUT  0x00
 #define		SHORTED  MUXn0
@@ -564,12 +564,13 @@ void update_bias_ref(uint8_t data[], SPI_HandleTypeDef *SPI);
 long extrae_un_canal (uint8_t data[], uint8_t canal);
 void format_data_frame(uint8_t data[], char *byte_buf);
 void print_chip_id(SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
-float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0);
+float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8_t ganancia);
 void configADS(uint8_t config[], uint8_t config_channel[], SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
 void adquire_single_data (uint8_t data[], SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
-void adquire_array_data (uint8_t data[], float channel_X[], uint8_t channel, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
+void adquire_array_data (uint8_t data[], float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
 void one_shot (uint8_t data[], SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
-void one_shot_array (uint8_t data[],float channel_X[], uint8_t channel, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
+void one_shot_array (uint8_t data[],float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
+uint8_t calcular_ganancia (uint8_t config_channel);
 
 uint8_t frame_loff_statp(uint8_t data[]);
 uint8_t frame_loff_statn(uint8_t data[]);
