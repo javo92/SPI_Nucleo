@@ -1,0 +1,10 @@
+.\spi_nucleo\arm_fir_f32.o: ..\Middlewares\FilteringFunctions\arm_fir_f32.c
+.\spi_nucleo\arm_fir_f32.o: ../Drivers/CMSIS/Include/arm_math.h
+.\spi_nucleo\arm_fir_f32.o: ../Drivers/CMSIS/Include/core_cm4.h
+.\spi_nucleo\arm_fir_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\spi_nucleo\arm_fir_f32.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+.\spi_nucleo\arm_fir_f32.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+.\spi_nucleo\arm_fir_f32.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+.\spi_nucleo\arm_fir_f32.o: ../Drivers/CMSIS/Include/core_cmSimd.h
+.\spi_nucleo\arm_fir_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\spi_nucleo\arm_fir_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

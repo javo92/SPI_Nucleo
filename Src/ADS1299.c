@@ -299,9 +299,9 @@ void print_chip_id(SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 		//};
 
 			
-float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8_t ganancia)
+float32_t byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8_t ganancia)
 	{
-		float value = 0;
+		float32_t value = 0;
 		
 		union miDato{
 		struct
@@ -427,7 +427,7 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8
 }
 		
 	
-	void adquire_array_data (uint8_t data[], float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
+	void adquire_array_data (uint8_t data[], float32_t channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 	{
 		int debug = 255;
 		// read 250 samples
@@ -484,12 +484,12 @@ float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8
 			update_bias_ref(data, SPI);
 }
 	
-		void one_shot_array (uint8_t data[],float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
+		void one_shot_array (uint8_t data[],float32_t channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 	{
 		uint8_t zero = 0x00;
 		uint8_t cmd = RDATA;
-		float anterior = 0x00;
-		float pre_anterior = 0x00;
+		float32_t anterior = 0x00;
+		float32_t pre_anterior = 0x00;
 		
 	// IPIN_MASTER_CS	
 		

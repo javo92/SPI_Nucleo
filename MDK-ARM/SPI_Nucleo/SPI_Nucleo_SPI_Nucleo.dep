@@ -1,5 +1,5 @@
 Dependencies for Project 'SPI_Nucleo', Target 'SPI_Nucleo': (DO NOT MODIFY !)
-F (../Src/stm32f4xx_hal_msp.c)(0x5AD4A86A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_msp.o --omf_browse .\spi_nucleo\stm32f4xx_hal_msp.crf --depend .\spi_nucleo\stm32f4xx_hal_msp.d)
+F (../Src/stm32f4xx_hal_msp.c)(0x5AD4A86A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_msp.o --omf_browse .\spi_nucleo\stm32f4xx_hal_msp.crf --depend .\spi_nucleo\stm32f4xx_hal_msp.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -7,7 +7,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -33,7 +33,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Src/stm32f4xx_it.c)(0x5AD4A869)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_it.o --omf_browse .\spi_nucleo\stm32f4xx_it.crf --depend .\spi_nucleo\stm32f4xx_it.d)
+F (../Src/stm32f4xx_it.c)(0x5AD4A869)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_it.o --omf_browse .\spi_nucleo\stm32f4xx_it.crf --depend .\spi_nucleo\stm32f4xx_it.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -41,7 +41,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -68,7 +68,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
 I (../Inc/stm32f4xx_it.h)(0x5AD4A869)
-F (../Src/main.c)(0x5AD9B859)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\main.o --omf_browse .\spi_nucleo\main.crf --depend .\spi_nucleo\main.d)
+F (../Src/main.c)(0x5AF19332)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\main.o --omf_browse .\spi_nucleo\main.crf --depend .\spi_nucleo\main.d)
 I (../Inc/main.h)(0x5AD4A86A)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
@@ -76,7 +76,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -103,11 +103,15 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
 I (../Inc/usb_host.h)(0x5AD4A869)
-I (../Inc/util.h)(0x5A96D589)
-I (../Inc/ADS1299.h)(0x5AD9B859)
+I (../Inc/util.h)(0x5AF0189D)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5AED8826)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F65B16)
+I (../Inc/ADS1299.h)(0x5AF01842)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
-F (../Src/usbh_conf.c)(0x5AD4A869)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_conf.o --omf_browse .\spi_nucleo\usbh_conf.crf --depend .\spi_nucleo\usbh_conf.d)
+I (../Inc/math_helper.h)(0x5AED8424)
+F (../Src/usbh_conf.c)(0x5AD4A869)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_conf.o --omf_browse .\spi_nucleo\usbh_conf.crf --depend .\spi_nucleo\usbh_conf.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F65B18)
@@ -115,7 +119,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -149,8 +153,17 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
-F (..\Src\util.c)(0x5A8B7344)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\util.o --omf_browse .\spi_nucleo\util.crf --depend .\spi_nucleo\util.d)
-I (../Inc/util.h)(0x5A96D589)
+F (..\Src\util.c)(0x5AF0186D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\util.o --omf_browse .\spi_nucleo\util.crf --depend .\spi_nucleo\util.d)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5AED8826)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x59F77578)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F65B16)
+I (../Inc/util.h)(0x5AF0189D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -158,12 +171,6 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x59F77578)
-I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x59F77576)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x59F77578)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F65B18)
@@ -184,11 +191,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Src/usb_host.c)(0x5AD4A869)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usb_host.o --omf_browse .\spi_nucleo\usb_host.crf --depend .\spi_nucleo\usb_host.d)
+F (../Src/usb_host.c)(0x5AD4A869)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usb_host.o --omf_browse .\spi_nucleo\usb_host.crf --depend .\spi_nucleo\usb_host.d)
 I (../Inc/usb_host.h)(0x5AD4A869)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -237,8 +244,8 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_mouse.h)(0x59
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_keybd.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc/usbh_mtp.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc/usbh_mtp_ptp.h)(0x59F7757A)
-F (..\Src\ADS1299.c)(0x5AD9C455)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc --cpp-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\ads1299.o --omf_browse .\spi_nucleo\ads1299.crf --depend .\spi_nucleo\ads1299.d)
-I (../Inc/ADS1299.h)(0x5AD9B859)
+F (..\Src\ADS1299.c)(0x5AF0189A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc --cpp-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\ads1299.o --omf_browse .\spi_nucleo\ads1299.crf --depend .\spi_nucleo\ads1299.d)
+I (../Inc/ADS1299.h)(0x5AF01842)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -246,7 +253,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -272,10 +279,34 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-I (../Inc/util.h)(0x5A96D589)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5AED8826)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F65B16)
+I (../Inc/util.h)(0x5AF0189D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal.o --omf_browse .\spi_nucleo\stm32f4xx_hal.crf --depend .\spi_nucleo\stm32f4xx_hal.d)
+F (..\Src\math_helper.c)(0x5AED840C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\math_helper.o --omf_browse .\spi_nucleo\math_helper.crf --depend .\spi_nucleo\math_helper.d)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F65B16)
+I (../Inc/math_helper.h)(0x5AED8424)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5AED8826)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x59F77578)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
+F (.\arm_fir_data.c)(0x5AF0188E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\arm_fir_data.o --omf_browse .\spi_nucleo\arm_fir_data.crf --depend .\spi_nucleo\arm_fir_data.d)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5AED8826)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x59F77578)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F65B16)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal.o --omf_browse .\spi_nucleo\stm32f4xx_hal.crf --depend .\spi_nucleo\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -283,7 +314,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -309,7 +340,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_dma_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_dma_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_dma_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_dma_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_dma_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -317,7 +348,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -343,7 +374,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_gpio.o --omf_browse .\spi_nucleo\stm32f4xx_hal_gpio.crf --depend .\spi_nucleo\stm32f4xx_hal_gpio.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_gpio.o --omf_browse .\spi_nucleo\stm32f4xx_hal_gpio.crf --depend .\spi_nucleo\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -351,7 +382,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -377,7 +408,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_flash_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_flash_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_flash_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_flash_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_flash_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -385,7 +416,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -411,7 +442,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_dma.o --omf_browse .\spi_nucleo\stm32f4xx_hal_dma.crf --depend .\spi_nucleo\stm32f4xx_hal_dma.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_dma.o --omf_browse .\spi_nucleo\stm32f4xx_hal_dma.crf --depend .\spi_nucleo\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -419,7 +450,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -445,7 +476,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_cortex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_cortex.crf --depend .\spi_nucleo\stm32f4xx_hal_cortex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_cortex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_cortex.crf --depend .\spi_nucleo\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -453,7 +484,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -479,7 +510,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_spi.o --omf_browse .\spi_nucleo\stm32f4xx_hal_spi.crf --depend .\spi_nucleo\stm32f4xx_hal_spi.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_spi.o --omf_browse .\spi_nucleo\stm32f4xx_hal_spi.crf --depend .\spi_nucleo\stm32f4xx_hal_spi.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -487,7 +518,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -513,7 +544,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_tim_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_tim_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_tim_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_tim_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_tim_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_tim_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -521,7 +552,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -547,7 +578,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_tim.o --omf_browse .\spi_nucleo\stm32f4xx_hal_tim.crf --depend .\spi_nucleo\stm32f4xx_hal_tim.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_tim.o --omf_browse .\spi_nucleo\stm32f4xx_hal_tim.crf --depend .\spi_nucleo\stm32f4xx_hal_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -555,7 +586,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -581,7 +612,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_flash_ramfunc.o --omf_browse .\spi_nucleo\stm32f4xx_hal_flash_ramfunc.crf --depend .\spi_nucleo\stm32f4xx_hal_flash_ramfunc.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_flash_ramfunc.o --omf_browse .\spi_nucleo\stm32f4xx_hal_flash_ramfunc.crf --depend .\spi_nucleo\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -589,7 +620,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -615,7 +646,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_flash.o --omf_browse .\spi_nucleo\stm32f4xx_hal_flash.crf --depend .\spi_nucleo\stm32f4xx_hal_flash.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_flash.o --omf_browse .\spi_nucleo\stm32f4xx_hal_flash.crf --depend .\spi_nucleo\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -623,7 +654,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -649,7 +680,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_pwr.o --omf_browse .\spi_nucleo\stm32f4xx_hal_pwr.crf --depend .\spi_nucleo\stm32f4xx_hal_pwr.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_pwr.o --omf_browse .\spi_nucleo\stm32f4xx_hal_pwr.crf --depend .\spi_nucleo\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -657,7 +688,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -683,7 +714,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_rcc.o --omf_browse .\spi_nucleo\stm32f4xx_hal_rcc.crf --depend .\spi_nucleo\stm32f4xx_hal_rcc.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_rcc.o --omf_browse .\spi_nucleo\stm32f4xx_hal_rcc.crf --depend .\spi_nucleo\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -691,7 +722,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -717,7 +748,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_rcc_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_rcc_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_rcc_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_rcc_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_rcc_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -725,7 +756,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -751,7 +782,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_pwr_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_pwr_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_pwr_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_pwr_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_pwr_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -759,7 +790,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -785,7 +816,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_hcd.o --omf_browse .\spi_nucleo\stm32f4xx_hal_hcd.crf --depend .\spi_nucleo\stm32f4xx_hal_hcd.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_hcd.o --omf_browse .\spi_nucleo\stm32f4xx_hal_hcd.crf --depend .\spi_nucleo\stm32f4xx_hal_hcd.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -793,7 +824,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -819,7 +850,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_ll_usb.o --omf_browse .\spi_nucleo\stm32f4xx_ll_usb.crf --depend .\spi_nucleo\stm32f4xx_ll_usb.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_ll_usb.o --omf_browse .\spi_nucleo\stm32f4xx_ll_usb.crf --depend .\spi_nucleo\stm32f4xx_ll_usb.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -827,7 +858,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -853,7 +884,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_adc_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_adc_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_adc_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_adc_ex.o --omf_browse .\spi_nucleo\stm32f4xx_hal_adc_ex.crf --depend .\spi_nucleo\stm32f4xx_hal_adc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -861,7 +892,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -887,7 +918,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_adc.o --omf_browse .\spi_nucleo\stm32f4xx_hal_adc.crf --depend .\spi_nucleo\stm32f4xx_hal_adc.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_adc.o --omf_browse .\spi_nucleo\stm32f4xx_hal_adc.crf --depend .\spi_nucleo\stm32f4xx_hal_adc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -895,7 +926,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -921,7 +952,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x59F77579)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\stm32f4xx_hal_uart.o --omf_browse .\spi_nucleo\stm32f4xx_hal_uart.crf --depend .\spi_nucleo\stm32f4xx_hal_uart.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x59F77579)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\stm32f4xx_hal_uart.o --omf_browse .\spi_nucleo\stm32f4xx_hal_uart.crf --depend .\spi_nucleo\stm32f4xx_hal_uart.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x59F77578)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5AD4A86A)
 I (../Inc/main.h)(0x5AD4A86A)
@@ -929,7 +960,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x59F77578)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -955,10 +986,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (../Src/system_stm32f4xx.c)(0x59F77576)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\system_stm32f4xx.o --omf_browse .\spi_nucleo\system_stm32f4xx.crf --depend .\spi_nucleo\system_stm32f4xx.d)
+F (../Src/system_stm32f4xx.c)(0x59F77576)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\system_stm32f4xx.o --omf_browse .\spi_nucleo\system_stm32f4xx.crf --depend .\spi_nucleo\system_stm32f4xx.d)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -989,8 +1020,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x59F77579)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h)(0x59F77578)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
-F (startup_stm32f405xx.s)(0x5AD4A86D)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F405xx SETA 1"--list startup_stm32f405xx.lst --xref -o .\spi_nucleo\startup_stm32f405xx.o --depend .\spi_nucleo\startup_stm32f405xx.d)
-F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_ctlreq.o --omf_browse .\spi_nucleo\usbh_ctlreq.crf --depend .\spi_nucleo\usbh_ctlreq.d)
+F (startup_stm32f405xx.s)(0x5AD4A86D)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F405xx SETA 1"--list startup_stm32f405xx.lst --xref -o .\spi_nucleo\startup_stm32f405xx.o --depend .\spi_nucleo\startup_stm32f405xx.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_ctlreq.o --omf_browse .\spi_nucleo\usbh_ctlreq.crf --depend .\spi_nucleo\usbh_ctlreq.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -999,7 +1030,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1032,7 +1063,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_pipes.o --omf_browse .\spi_nucleo\usbh_pipes.crf --depend .\spi_nucleo\usbh_pipes.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_pipes.o --omf_browse .\spi_nucleo\usbh_pipes.crf --depend .\spi_nucleo\usbh_pipes.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1041,7 +1072,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1074,7 +1105,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x59F77579)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid_keybd.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_hid_keybd.o --omf_browse .\spi_nucleo\usbh_hid_keybd.crf --depend .\spi_nucleo\usbh_hid_keybd.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid_keybd.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_hid_keybd.o --omf_browse .\spi_nucleo\usbh_hid_keybd.crf --depend .\spi_nucleo\usbh_hid_keybd.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_keybd.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
@@ -1084,7 +1115,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1121,7 +1152,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_mouse.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_parser.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_usage.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_ioreq.o --omf_browse .\spi_nucleo\usbh_ioreq.crf --depend .\spi_nucleo\usbh_ioreq.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_ioreq.o --omf_browse .\spi_nucleo\usbh_ioreq.crf --depend .\spi_nucleo\usbh_ioreq.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F65B18)
@@ -1129,7 +1160,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1163,7 +1194,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid_mouse.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_hid_mouse.o --omf_browse .\spi_nucleo\usbh_hid_mouse.crf --depend .\spi_nucleo\usbh_hid_mouse.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid_mouse.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_hid_mouse.o --omf_browse .\spi_nucleo\usbh_hid_mouse.crf --depend .\spi_nucleo\usbh_hid_mouse.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_mouse.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
@@ -1173,7 +1204,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1210,7 +1241,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_keybd.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_parser.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_usage.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Src/usbh_audio.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_audio.o --omf_browse .\spi_nucleo\usbh_audio.crf --depend .\spi_nucleo\usbh_audio.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Src/usbh_audio.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_audio.o --omf_browse .\spi_nucleo\usbh_audio.crf --depend .\spi_nucleo\usbh_audio.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc/usbh_audio.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1219,7 +1250,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1253,7 +1284,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Src/usbh_mtp.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_mtp.o --omf_browse .\spi_nucleo\usbh_mtp.crf --depend .\spi_nucleo\usbh_mtp.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Src/usbh_mtp.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_mtp.o --omf_browse .\spi_nucleo\usbh_mtp.crf --depend .\spi_nucleo\usbh_mtp.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc/usbh_mtp.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc/usbh_mtp_ptp.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
@@ -1263,7 +1294,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1297,7 +1328,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_bot.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_msc_bot.o --omf_browse .\spi_nucleo\usbh_msc_bot.crf --depend .\spi_nucleo\usbh_msc_bot.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_bot.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_msc_bot.o --omf_browse .\spi_nucleo\usbh_msc_bot.crf --depend .\spi_nucleo\usbh_msc_bot.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc_bot.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1306,7 +1337,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1342,7 +1373,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc_scsi.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_hid.o --omf_browse .\spi_nucleo\usbh_hid.crf --depend .\spi_nucleo\usbh_hid.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_hid.o --omf_browse .\spi_nucleo\usbh_hid.crf --depend .\spi_nucleo\usbh_hid.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1351,7 +1382,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1389,7 +1420,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_mouse.h)(0x59
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_keybd.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_parser.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_usage.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid_parser.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_hid_parser.o --omf_browse .\spi_nucleo\usbh_hid_parser.crf --depend .\spi_nucleo\usbh_hid_parser.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Src/usbh_hid_parser.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_hid_parser.o --omf_browse .\spi_nucleo\usbh_hid_parser.crf --depend .\spi_nucleo\usbh_hid_parser.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_parser.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
@@ -1399,7 +1430,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1436,7 +1467,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_mouse.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_keybd.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc/usbh_hid_usage.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Src/usbh_mtp_ptp.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_mtp_ptp.o --omf_browse .\spi_nucleo\usbh_mtp_ptp.crf --depend .\spi_nucleo\usbh_mtp_ptp.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Src/usbh_mtp_ptp.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_mtp_ptp.o --omf_browse .\spi_nucleo\usbh_mtp_ptp.crf --depend .\spi_nucleo\usbh_mtp_ptp.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc/usbh_mtp_ptp.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1445,7 +1476,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1480,7 +1511,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc/usbh_mtp.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_msc.o --omf_browse .\spi_nucleo\usbh_msc.crf --depend .\spi_nucleo\usbh_msc.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_msc.o --omf_browse .\spi_nucleo\usbh_msc.crf --depend .\spi_nucleo\usbh_msc.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1489,7 +1520,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1525,7 +1556,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc_bot.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc_scsi.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_cdc.o --omf_browse .\spi_nucleo\usbh_cdc.crf --depend .\spi_nucleo\usbh_cdc.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_cdc.o --omf_browse .\spi_nucleo\usbh_cdc.crf --depend .\spi_nucleo\usbh_cdc.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc/usbh_cdc.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1534,7 +1565,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1568,7 +1599,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_core.o --omf_browse .\spi_nucleo\usbh_core.crf --depend .\spi_nucleo\usbh_core.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_core.o --omf_browse .\spi_nucleo\usbh_core.crf --depend .\spi_nucleo\usbh_core.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F65B18)
@@ -1576,7 +1607,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1610,7 +1641,7 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_def.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
-F (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c)(0x59F7757A)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx --C99-o .\spi_nucleo\usbh_msc_scsi.o --omf_browse .\spi_nucleo\usbh_msc_scsi.crf --depend .\spi_nucleo\usbh_msc_scsi.d)
+F (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c)(0x59F7757A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\usbh_msc_scsi.o --omf_browse .\spi_nucleo\usbh_msc_scsi.crf --depend .\spi_nucleo\usbh_msc_scsi.d)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h)(0x59F7757A)
 I (../Inc/usbh_conf.h)(0x5AD4A869)
@@ -1619,7 +1650,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F65B18)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x59F77576)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x59F77576)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
@@ -1655,3 +1686,23 @@ I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc_bot.h)(0x59F7757A)
 I (../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc/usbh_msc_scsi.h)(0x59F7757A)
+F (..\Middlewares\FilteringFunctions\arm_fir_f32.c)(0x5898ABFA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\arm_fir_f32.o --omf_browse .\spi_nucleo\arm_fir_f32.crf --depend .\spi_nucleo\arm_fir_f32.d)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5AED8826)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x59F77578)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F65B16)
+F (..\Middlewares\FilteringFunctions\arm_fir_init_f32.c)(0x5898ABFA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc-I.\RTE\_SPI_Nucleo-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx -DARM_MATH_CM4-o .\spi_nucleo\arm_fir_init_f32.o --omf_browse .\spi_nucleo\arm_fir_init_f32.crf --depend .\spi_nucleo\arm_fir_init_f32.d)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5AED8826)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5AED953E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F65B18)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x59F77578)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x59F77578)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F65B18)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F65B16)

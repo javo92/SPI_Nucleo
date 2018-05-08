@@ -6,6 +6,8 @@
 ".\spi_nucleo\util.o"
 ".\spi_nucleo\usb_host.o"
 ".\spi_nucleo\ads1299.o"
+".\spi_nucleo\math_helper.o"
+".\spi_nucleo\arm_fir_data.o"
 ".\spi_nucleo\stm32f4xx_hal.o"
 ".\spi_nucleo\stm32f4xx_hal_dma_ex.o"
 ".\spi_nucleo\stm32f4xx_hal_gpio.o"
@@ -43,6 +45,8 @@
 ".\spi_nucleo\usbh_cdc.o"
 ".\spi_nucleo\usbh_core.o"
 ".\spi_nucleo\usbh_msc_scsi.o"
+".\spi_nucleo\arm_fir_f32.o"
+".\spi_nucleo\arm_fir_init_f32.o"
 --library_type=microlib --strict --scatter ".\SPI_Nucleo\SPI_Nucleo.sct"
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

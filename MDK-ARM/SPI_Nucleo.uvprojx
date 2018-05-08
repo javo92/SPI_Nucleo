@@ -322,7 +322,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -333,7 +333,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,STM32F405xx</Define>
+              <Define>USE_HAL_DRIVER,STM32F405xx, ARM_MATH_CM4</Define>
               <Undefine></Undefine>
               <IncludePath>../Inc;                                         ../Drivers/STM32F4xx_HAL_Driver/Inc;                                         ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;                                         ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;                                         ../Drivers/CMSIS/Include;               ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc;               ../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc;               ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc;               ../Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc;               ../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc;               ../Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc</IncludePath>
             </VariousControls>
@@ -463,6 +463,66 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+            <File>
+              <FileName>math_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\math_helper.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>2</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>2</wLevel>
+                    <uThumb>0</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>arm_fir_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\arm_fir_data.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -668,6 +728,16 @@
               <FileName>usbh_msc_scsi.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c</FilePath>
+            </File>
+            <File>
+              <FileName>arm_fir_f32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\FilteringFunctions\arm_fir_f32.c</FilePath>
+            </File>
+            <File>
+              <FileName>arm_fir_init_f32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\FilteringFunctions\arm_fir_init_f32.c</FilePath>
             </File>
           </Files>
         </Group>

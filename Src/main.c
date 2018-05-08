@@ -50,16 +50,22 @@
 #include "main.h"
 #include "stm32f4xx_hal.h"
 #include "usb_host.h"
-
 /* USER CODE BEGIN Includes */
 
 #include "util.h"
 #include "ADS1299.h"
 #include "stdbool.h"
-//#include "stdio.h"
-//#include <stdio.h>
 #include <stdlib.h>
 
+// Includes y defines relacionados con el filtro FIR
+#include "arm_math.h"
+#include "math_helper.h"
+
+// Defines relacionados con el filtro FIR
+#define TEST_LENGTH_SAMPLES  320
+#define SNR_THRESHOLD_F32    140.0f
+#define BLOCK_SIZE            32
+#define NUM_TAPS              29
 
 /* USER CODE END Includes */
 
@@ -89,8 +95,8 @@ void MX_USB_HOST_Process(void);
 /* Private function prototypes -----------------------------------------------*/
 
 	uint8_t commandFromESP (uint8_t command, SPI_HandleTypeDef *SPI);
-	void float2ESP (float data2ESP, SPI_HandleTypeDef *SPI);
-	void floatArray2ESP ( float data2ESP_array[], int N_elementos, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
+	void float2ESP (float32_t data2ESP, SPI_HandleTypeDef *SPI);
+	void floatArray2ESP ( float32_t data2ESP_array[], int N_elementos, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
 
 /* USER CODE END PFP */
 
@@ -98,7 +104,7 @@ void MX_USB_HOST_Process(void);
 
 // global variables
 unsigned long blink_interval_millis;
-float channel_1 [250];
+float32_t channel_1 [250];
 bool wait = false;
 uint8_t bucle=1;
 uint8_t k = 0;
@@ -114,7 +120,7 @@ uint8_t command = 0x00;
 
 int channel = 1;
 
-float data2ESP = 1234.5678;
+float32_t data2ESP = 1234.5678;
 
 
 bool shared_negative_electrode = true;
@@ -122,6 +128,35 @@ bool shared_negative_electrode = true;
 #define BLINK_INTERVAL_SETUP 100;
 #define BLINK_INTERVAL_WAITING 500;
 #define BLINK_INTERVAL_SENDING 2000;
+
+/* -------------------------------------------------------------------
+ * Declare Test output buffer
+ * ------------------------------------------------------------------- */
+static float32_t testOutput[TEST_LENGTH_SAMPLES];
+/* -------------------------------------------------------------------
+ * Declare State buffer of size (numTaps + blockSize - 1)
+ * ------------------------------------------------------------------- */
+static float32_t firStateF32[BLOCK_SIZE + NUM_TAPS - 1];
+/* ----------------------------------------------------------------------
+** FIR Coefficients buffer generated using fir1() MATLAB function.
+** fir1(28, 6/24)
+** ------------------------------------------------------------------- */
+const float32_t firCoeffs32[NUM_TAPS] = {0.0f, 0.0000f, 0.0000f, 0.0004f, 0.0015f, 0.0023f, -0.0000f, -0.0076f, -0.0180f, -0.0207f, 0.0000f, 0.0536f, 0.1319f, 0.2072f, 0.2500f, 0.2072f, 0.1319f, 0.0536f, 0.0000f, -0.0207f, -0.0180f, -0.0076f, -0.0000f, 0.0023f, 0.0015f, 0.0004f, 0.0000f, 0.0000f, 0.0f};
+
+/*const float32_t firCoeffs32[NUM_TAPS] = {
+  -0.0018225230f, -0.0015879294f, +0.0000000000f, +0.0036977508f, +0.0080754303f, +0.0085302217f, -0.0000000000f, -0.0173976984f,
+  -0.0341458607f, -0.0333591565f, +0.0000000000f, +0.0676308395f, +0.1522061835f, +0.2229246956f, +0.2504960933f, +0.2229246956f,
+  +0.1522061835f, +0.0676308395f, +0.0000000000f, -0.0333591565f, -0.0341458607f, -0.0173976984f, -0.0000000000f, +0.0085302217f,
+  +0.0080754303f, +0.0036977508f, +0.0000000000f, -0.0015879294f, -0.0018225230f
+};
+*/
+/* ------------------------------------------------------------------
+ * Global variables for FIR LPF Example
+ * ------------------------------------------------------------------- */
+uint32_t blockSize = BLOCK_SIZE;
+uint32_t numBlocks = TEST_LENGTH_SAMPLES/BLOCK_SIZE;
+float32_t  snr;
+
 
 /* USER CODE END 0 */
 
@@ -159,7 +194,7 @@ int main(void)
   MX_USB_HOST_Init();
 
   /* USER CODE BEGIN 2 */
-		
+	
 	//Inicialización del estado de ciertos pines
 	
 	HAL_GPIO_WritePin(DRDY_N_GPIO_Port,DRDY_N_Pin, GPIO_PIN_SET);
@@ -220,6 +255,29 @@ int main(void)
 	{
 		gain[i] = calcular_ganancia(config_channel[i]);
 	}
+	
+	// Inicialización de todas las variables relacionadas con el filtrado
+	
+	extern float32_t testInput_f32_1kHz_15kHz[TEST_LENGTH_SAMPLES];
+		
+	int i;
+  arm_fir_instance_f32 S;
+  arm_status status;
+  float32_t  *inputF32, *outputF32;
+  // Initialize input and output buffer pointers 
+  inputF32 = &testInput_f32_1kHz_15kHz[0];				// Definición del puntero de la señal a filtrar.
+  outputF32 = &testOutput[0];											// Definición del puntero de la señal filtrada.
+	
+  // Call FIR init function to initialize the instance structure. 
+  arm_fir_init_f32(&S, NUM_TAPS, (float32_t *)&firCoeffs32[0], &firStateF32[0], blockSize);
+  // ----------------------------------------------------------------------
+  // Call the FIR process function for every blockSize samples
+  // ------------------------------------------------------------------- 
+  for(i=0; i < numBlocks; i++) //
+  {
+    arm_fir_f32(&S, inputF32 + (i * blockSize), outputF32 + (i * blockSize), blockSize);
+  }
+	
 	
 	//==============================================================
 
@@ -284,8 +342,11 @@ int main(void)
 		
 		case (0x02):	// Lectura continua de datos y envío al ESP
 			
-			adquire_array_data (data, channel_1, 1, gain[0], &hspi2, &huart4);
-			
+			//adquire_array_data (data, channel_1, 1, gain[0], &hspi2, &huart4);
+			for (int i = 0; i<250; i++)
+		{
+			channel_1[i] = testOutput[i];
+		}
 //			one_shot_array (data, channel_1, 1, &hspi2, &huart4);
 			
 			floatArray2ESP (channel_1, 250, &hspi1, &huart4);
@@ -554,14 +615,14 @@ uint8_t commandFromESP(uint8_t command, SPI_HandleTypeDef *hspi1)
 	return response;
 }
 
-void float2ESP (float data2ESP, SPI_HandleTypeDef *SPI)
+void float2ESP (float32_t data2ESP, SPI_HandleTypeDef *SPI)
 {	
 			union miDato{
 				struct
 				{
 					uint8_t  b[4];     // Array de bytes de tamaño igual al tamaño de la primera variable: int = 2 bytes, float = 4 bytes
 				}split;
-					float fval;
+					float32_t fval;
 			 } float_data; 
 
 			 float_data.fval=data2ESP;
@@ -573,14 +634,14 @@ void float2ESP (float data2ESP, SPI_HandleTypeDef *SPI)
 			 HAL_Delay(10);
 }
 
-void floatArray2ESP ( float data2ESP_array[], int N_elementos, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
+void floatArray2ESP ( float32_t data2ESP_array[], int N_elementos, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 {
 	union miDato{
 		struct
 		{
 			uint8_t  b[4];     // Array de bytes de tamaño igual al tamaño de la primera variable: int = 2 bytes, float = 4 bytes
 		}split;
-			float fval;
+			float32_t fval;
 	 } float_data; 
 	
 	uint8_t buffer [1000]; //tamaño máximo del buffer a usar

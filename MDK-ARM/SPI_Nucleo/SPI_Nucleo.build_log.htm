@@ -5,10 +5,10 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.23.0.0
 Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Javier Benavides Caro, k, LIC=----
+License Information: Javier Benavides Caro k Flex license: MDK-ARM Professional: 100 user(s) (mdk_pro) Operation stops: 5 Nov 2018
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.23
+Toolchain:       MDK-ARM Professional: 100 user(s)  Version: 5.23
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 4 (build 422)
 Assembler:       Armasm.exe V5.06 update 4 (build 422)
@@ -22,22 +22,19 @@ Dialog DLL:      TCM.DLL V1.27.0.0
  
 <h2>Project:</h2>
 D:\Javier\Dropbox\TFM\Programar el ARM\Keil\SPI_Nucleo\MDK-ARM\SPI_Nucleo.uvprojx
-Project File Date:  04/16/2018
+Project File Date:  05/05/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'SPI_Nucleo'
-compiling ADS1299.c...
-..\Src\ADS1299.c(432): warning:  #177-D: variable "debug"  was declared but never referenced
-  		int debug = 255;
-..\Src\ADS1299.c(492): warning:  #550-D: variable "pre_anterior"  was set but never used
-  		float pre_anterior = 0x00;
-..\Src\ADS1299.c: 2 warnings, 0 errors
 compiling main.c...
+../Src/main.c(265): warning:  #177-D: variable "status"  was declared but never referenced
+    arm_status status;
+../Src/main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=30572 RO-data=472 RW-data=216 ZI-data=4992  
+Program Size: Code=31664 RO-data=588 RW-data=1504 ZI-data=6512  
 FromELF: creating hex file...
-".\SPI_Nucleo\SPI_Nucleo.axf" - 0 Error(s), 2 Warning(s).
+".\SPI_Nucleo\SPI_Nucleo.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,7 +52,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Build Time Elapsed:  00:00:08
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

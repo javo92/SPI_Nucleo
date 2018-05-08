@@ -16,6 +16,7 @@
 #endif
 		
 		#include "stm32f4xx_hal.h"
+		#include "arm_math.h"
 
 		// system commands
 #define		WAKEUP 			0x02
@@ -564,12 +565,12 @@ void update_bias_ref(uint8_t data[], SPI_HandleTypeDef *SPI);
 long extrae_un_canal (uint8_t data[], uint8_t canal);
 void format_data_frame(uint8_t data[], char *byte_buf);
 void print_chip_id(SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
-float byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8_t ganancia);
+float32_t byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, uint8_t ganancia);
 void configADS(uint8_t config[], uint8_t config_channel[], SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
 void adquire_single_data (uint8_t data[], SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
-void adquire_array_data (uint8_t data[], float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
+void adquire_array_data (uint8_t data[], float32_t channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
 void one_shot (uint8_t data[], SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
-void one_shot_array (uint8_t data[],float channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
+void one_shot_array (uint8_t data[],float32_t channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4);
 uint8_t calcular_ganancia (uint8_t config_channel);
 
 uint8_t frame_loff_statp(uint8_t data[]);

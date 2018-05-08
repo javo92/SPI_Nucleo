@@ -34,6 +34,10 @@
 .\spi_nucleo\ads1299.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 .\spi_nucleo\ads1299.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h
 .\spi_nucleo\ads1299.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+.\spi_nucleo\ads1299.o: ../Drivers/CMSIS/Include/arm_math.h
+.\spi_nucleo\ads1299.o: ../Drivers/CMSIS/Include/core_cm4.h
+.\spi_nucleo\ads1299.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\spi_nucleo\ads1299.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\spi_nucleo\ads1299.o: ../Inc/util.h
 .\spi_nucleo\ads1299.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\spi_nucleo\ads1299.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

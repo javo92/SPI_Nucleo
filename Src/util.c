@@ -1,6 +1,7 @@
+#include "arm_math.h"
 #include "util.h"
 #include "main.h"		
-#include <stdio.h>
+
 
 void to_hex(char byte, char *buf)
 {
@@ -75,20 +76,18 @@ void Serial_println_lN(unsigned long number, UART_HandleTypeDef *huart4)
 	
 }
 
-void Serial_print_f(float number, UART_HandleTypeDef *huart4)
+void Serial_print_f(float32_t number, UART_HandleTypeDef *huart4)
 {
 	char str[7];
 	sprintf(str, "%0.10f\n", number);
 	Serial_print(str, huart4);
-	
 }	
 
-void Serial_println_f(float number, UART_HandleTypeDef *huart4)
+void Serial_println_f(float32_t number, UART_HandleTypeDef *huart4)
 {
-	char str[7];
-	sprintf(str, "%0.10f\n", number);
+	char str[8];
+	sprintf(str, "%0.6f\n", number);
 	Serial_println(str, huart4);
-	
 }
 
 
