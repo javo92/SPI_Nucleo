@@ -62,7 +62,7 @@
 #include "math_helper.h"
 
 // Defines relacionados con el filtro FIR
-#define TEST_LENGTH_SAMPLES  320
+#define TEST_LENGTH_SAMPLES  250
 #define SNR_THRESHOLD_F32    140.0f
 #define BLOCK_SIZE            32
 #define NUM_TAPS              29
@@ -265,19 +265,11 @@ int main(void)
   arm_status status;
   float32_t  *inputF32, *outputF32;
   // Initialize input and output buffer pointers 
-  inputF32 = &testInput_f32_1kHz_15kHz[0];				// Definición del puntero de la señal a filtrar.
-  outputF32 = &testOutput[0];											// Definición del puntero de la señal filtrada.
+  inputF32 = &channel_1[0];				// Definición del puntero de la señal a filtrar.
+  outputF32 = &testOutput[0];			// Definición del puntero de la señal filtrada.
 	
   // Call FIR init function to initialize the instance structure. 
   arm_fir_init_f32(&S, NUM_TAPS, (float32_t *)&firCoeffs32[0], &firStateF32[0], blockSize);
-  // ----------------------------------------------------------------------
-  // Call the FIR process function for every blockSize samples
-  // ------------------------------------------------------------------- 
-  for(i=0; i < numBlocks; i++) //
-  {
-    arm_fir_f32(&S, inputF32 + (i * blockSize), outputF32 + (i * blockSize), blockSize);
-  }
-	
 	
 	//==============================================================
 
@@ -342,14 +334,20 @@ int main(void)
 		
 		case (0x02):	// Lectura continua de datos y envío al ESP
 			
-			//adquire_array_data (data, channel_1, 1, gain[0], &hspi2, &huart4);
-			for (int i = 0; i<250; i++)
+		adquire_array_data (data, channel_1, 1, gain[0], &hspi2, &huart4);
+
+	// ----------------------------------------------------------------------
+  // Call the FIR process function for every blockSize samples
+  // ------------------------------------------------------------------- 
+  
+		for(i=0; i < numBlocks; i++) //
 		{
-			channel_1[i] = testOutput[i];
+			arm_fir_f32(&S, inputF32 + (i * blockSize), outputF32 + (i * blockSize), blockSize);
 		}
+		
 //			one_shot_array (data, channel_1, 1, &hspi2, &huart4);
 			
-			floatArray2ESP (channel_1, 250, &hspi1, &huart4);
+			floatArray2ESP (testOutput, 250, &hspi1, &huart4);
 		
 			command = 0x00;
 				
