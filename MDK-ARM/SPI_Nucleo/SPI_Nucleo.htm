@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\SPI_Nucleo\SPI_Nucleo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\SPI_Nucleo\SPI_Nucleo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Tue May 08 14:24:06 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu May 10 04:06:44 2018
 <BR><P>
-<H3>Maximum Stack Usage =       1152 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       1168 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; floatArray2ESP &rArr; HAL_SPI_Transmit &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 <P>
@@ -1428,8 +1428,7 @@ Global Symbols
 <P><STRONG><a name="[8c]"></a>USBH_LL_GetURBState</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usbh_conf.o(i.USBH_LL_GetURBState))
 <BR><BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_HCD_HC_GetURBState
 </UL>
-<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_Transmit
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_Control
+<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_Control
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_HandleControl
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CDC_ProcessTransmission
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CDC_ProcessReception
@@ -1437,6 +1436,7 @@ Global Symbols
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_HID_Process
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MTP_Events
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_Transmit
 </UL>
 
 <P><STRONG><a name="[be]"></a>USBH_LL_IncTimer</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, usbh_core.o(i.USBH_LL_IncTimer))
@@ -1942,8 +1942,8 @@ Global Symbols
 <LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_bias_ref
 </UL>
 
-<P><STRONG><a name="[165]"></a>adquire_array_data</STRONG> (Thumb, 170 bytes, Stack size 56 bytes, ads1299.o(i.adquire_array_data))
-<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = adquire_array_data &rArr; read_data_frame &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
+<P><STRONG><a name="[165]"></a>adquire_array_data</STRONG> (Thumb, 428 bytes, Stack size 40 bytes, ads1299.o(i.adquire_array_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = adquire_array_data &rArr; read_data_frame &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;byte2float
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
@@ -2060,8 +2060,8 @@ Global Symbols
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MTP_InterfaceDeInit
 </UL>
 
-<P><STRONG><a name="[59]"></a>main</STRONG> (Thumb, 696 bytes, Stack size 48 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1152<LI>Call Chain = main &rArr; floatArray2ESP &rArr; HAL_SPI_Transmit &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
+<P><STRONG><a name="[59]"></a>main</STRONG> (Thumb, 780 bytes, Stack size 64 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1168<LI>Call Chain = main &rArr; floatArray2ESP &rArr; HAL_SPI_Transmit &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configADS
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calcular_ganancia
@@ -2405,9 +2405,9 @@ Local Symbols
 <P><STRONG><a name="[113]"></a>USBH_AUDIO_OutputStream</STRONG> (Thumb, 134 bytes, Stack size 24 bytes, usbh_audio.o(i.USBH_AUDIO_OutputStream))
 <BR><BR>[Stack]<UL><LI>Max Depth = 292<LI>Call Chain = USBH_AUDIO_OutputStream &rArr; USBH_AUDIO_Transmit &rArr; USBH_AUDIO_Control &rArr; USBH_AUDIO_SetControlAttribute &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendData &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_Transmit
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_SetEndpointControls
+<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_SetEndpointControls
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_FrequencySet
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_Transmit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AUDIO_Process
 </UL>

@@ -61,12 +61,6 @@
 #include "arm_math.h"
 #include "math_helper.h"
 
-// Defines relacionados con el filtro FIR
-#define TEST_LENGTH_SAMPLES  250
-#define SNR_THRESHOLD_F32    140.0f
-#define BLOCK_SIZE            32
-#define NUM_TAPS              29
-
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -104,7 +98,15 @@ void MX_USB_HOST_Process(void);
 
 // global variables
 unsigned long blink_interval_millis;
-float32_t channel_1 [250];
+float32_t channel_1 [LENGTH_SAMPLES];
+float32_t channel_2 [LENGTH_SAMPLES];
+float32_t channel_3 [LENGTH_SAMPLES];
+float32_t channel_4 [LENGTH_SAMPLES];
+float32_t channel_5 [LENGTH_SAMPLES];
+float32_t channel_6 [LENGTH_SAMPLES];
+float32_t channel_7 [LENGTH_SAMPLES];
+float32_t channel_8 [LENGTH_SAMPLES];
+
 bool wait = false;
 uint8_t bucle=1;
 uint8_t k = 0;
@@ -122,17 +124,12 @@ int channel = 1;
 
 float32_t data2ESP = 1234.5678;
 
-
 bool shared_negative_electrode = true;
-
-#define BLINK_INTERVAL_SETUP 100;
-#define BLINK_INTERVAL_WAITING 500;
-#define BLINK_INTERVAL_SENDING 2000;
 
 /* -------------------------------------------------------------------
  * Declare Test output buffer
  * ------------------------------------------------------------------- */
-static float32_t testOutput[TEST_LENGTH_SAMPLES];
+static float32_t testOutput[LENGTH_SAMPLES];
 /* -------------------------------------------------------------------
  * Declare State buffer of size (numTaps + blockSize - 1)
  * ------------------------------------------------------------------- */
@@ -141,7 +138,7 @@ static float32_t firStateF32[BLOCK_SIZE + NUM_TAPS - 1];
 ** FIR Coefficients buffer generated using fir1() MATLAB function.
 ** fir1(28, 6/24)
 ** ------------------------------------------------------------------- */
-const float32_t firCoeffs32[NUM_TAPS] = {0.0f, 0.0000f, 0.0000f, 0.0004f, 0.0015f, 0.0023f, -0.0000f, -0.0076f, -0.0180f, -0.0207f, 0.0000f, 0.0536f, 0.1319f, 0.2072f, 0.2500f, 0.2072f, 0.1319f, 0.0536f, 0.0000f, -0.0207f, -0.0180f, -0.0076f, -0.0000f, 0.0023f, 0.0015f, 0.0004f, 0.0000f, 0.0000f, 0.0f};
+const float32_t firCoeffs32[NUM_TAPS] = {-0.000038614678f, 0.000000000000f, 0.000015338068f, 0.000206602902f, 0.000877225767f, 0.002464976243f, 0.005514736861f, 0.010571075345f, 0.018001967212f, 0.027801754849f, 0.039444437421f, 0.051855626874f, 0.063540647046f, 0.072856397877f, 0.080000000000f, 0.072856397877f, 0.063540647046f, 0.051855626874f, 0.039444437421f, 0.027801754849f, 0.018001967212f, 0.010571075345f, 0.005514736861f, 0.002464976243f, 0.000877225767f, 0.000206602902f, 0.000015338068f, 0.000000000000f, -0.000038614678};
 
 /*const float32_t firCoeffs32[NUM_TAPS] = {
   -0.0018225230f, -0.0015879294f, +0.0000000000f, +0.0036977508f, +0.0080754303f, +0.0085302217f, -0.0000000000f, -0.0173976984f,
@@ -154,9 +151,15 @@ const float32_t firCoeffs32[NUM_TAPS] = {0.0f, 0.0000f, 0.0000f, 0.0004f, 0.0015
  * Global variables for FIR LPF Example
  * ------------------------------------------------------------------- */
 uint32_t blockSize = BLOCK_SIZE;
-uint32_t numBlocks = TEST_LENGTH_SAMPLES/BLOCK_SIZE;
+uint32_t numBlocks = LENGTH_SAMPLES/BLOCK_SIZE;
 float32_t  snr;
-
+	
+// Inicialización de todas las variables relacionadas con el filtrado
+	int i;
+  arm_fir_instance_f32 S;
+  arm_status status;
+  float32_t  *inputF32 	= &channel_1[0];			// Definición del puntero de la señal a filtrar.
+	float32_t  *outputF32 = &testOutput[0];			// Definición del puntero de la señal filtrada.
 
 /* USER CODE END 0 */
 
@@ -256,21 +259,6 @@ int main(void)
 		gain[i] = calcular_ganancia(config_channel[i]);
 	}
 	
-	// Inicialización de todas las variables relacionadas con el filtrado
-	
-	extern float32_t testInput_f32_1kHz_15kHz[TEST_LENGTH_SAMPLES];
-		
-	int i;
-  arm_fir_instance_f32 S;
-  arm_status status;
-  float32_t  *inputF32, *outputF32;
-  // Initialize input and output buffer pointers 
-  inputF32 = &channel_1[0];				// Definición del puntero de la señal a filtrar.
-  outputF32 = &testOutput[0];			// Definición del puntero de la señal filtrada.
-	
-  // Call FIR init function to initialize the instance structure. 
-  arm_fir_init_f32(&S, NUM_TAPS, (float32_t *)&firCoeffs32[0], &firStateF32[0], blockSize);
-	
 	//==============================================================
 
 
@@ -316,7 +304,7 @@ int main(void)
 //			one_shot(data, &hspi2, &huart4);
 		
 			//adc_wreg(GPIO, 0x2C, &hspi2);				// Led 1 on, led 2 off	
-				
+			
 			for (int i = 1; i<=8; i++)
 			{					
 			data2ESP = byte2float(data[i*3], data[i*3 +1], data[i*3 + 2], gain[i]);
@@ -334,12 +322,19 @@ int main(void)
 		
 		case (0x02):	// Lectura continua de datos y envío al ESP
 			
-		adquire_array_data (data, channel_1, 1, gain[0], &hspi2, &huart4);
+		adquire_array_data (data, channel_1, channel_2, channel_3, channel_4, channel_5, channel_6, channel_7, channel_8, gain, &hspi2, &huart4);
 
 	// ----------------------------------------------------------------------
   // Call the FIR process function for every blockSize samples
   // ------------------------------------------------------------------- 
   
+		for(i=0; i < (BLOCK_SIZE + NUM_TAPS - 1); i++) 
+		{
+			firStateF32[i]=channel_1[i];
+		}
+		// Call FIR init function to initialize the instance structure. 
+		arm_fir_init_f32(&S, NUM_TAPS, (float32_t *)&firCoeffs32[0], &firStateF32[0], blockSize);
+		
 		for(i=0; i < numBlocks; i++) //
 		{
 			arm_fir_f32(&S, inputF32 + (i * blockSize), outputF32 + (i * blockSize), blockSize);
@@ -347,7 +342,7 @@ int main(void)
 		
 //			one_shot_array (data, channel_1, 1, &hspi2, &huart4);
 			
-			floatArray2ESP (testOutput, 250, &hspi1, &huart4);
+			floatArray2ESP (testOutput, LENGTH_SAMPLES, &hspi1, &huart4);
 		
 			command = 0x00;
 				

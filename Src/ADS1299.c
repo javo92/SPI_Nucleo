@@ -427,10 +427,10 @@ float32_t byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, u
 }
 		
 	
-	void adquire_array_data (uint8_t data[], float32_t channel_X[], uint8_t channel, uint8_t gain, SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
+	void adquire_array_data (uint8_t data[], float32_t channel_1[],float32_t channel_2[],float32_t channel_3[],float32_t channel_4[],float32_t channel_5[],float32_t channel_6[],float32_t channel_7[],float32_t channel_8[], uint8_t gain[], SPI_HandleTypeDef *SPI, UART_HandleTypeDef *huart4)
 	{
 		int debug = 255;
-		// read 250 samples
+		// read LENGTH_SAMPLES samples
 		
 		//adc_wreg(GPIO, 0x2C, SPI);				// Led 1 on, led 2 off
 		
@@ -442,17 +442,31 @@ float32_t byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, u
 		
 		read_data_frame(data, SPI);
 			
-		channel_X[0] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2], gain);
+		channel_1[0] = byte2float(data[1*3], data[1*3 +1], data[1*3 + 2], gain[0]);
+		channel_2[0] = byte2float(data[2*3], data[2*3 +1], data[2*3 + 2], gain[1]);
+		channel_3[0] = byte2float(data[3*3], data[3*3 +1], data[3*3 + 2], gain[2]);
+		channel_4[0] = byte2float(data[4*3], data[4*3 +1], data[4*3 + 2], gain[3]);
+		channel_5[0] = byte2float(data[5*3], data[5*3 +1], data[5*3 + 2], gain[4]);
+		channel_6[0] = byte2float(data[6*3], data[6*3 +1], data[6*3 + 2], gain[5]);
+		channel_7[0] = byte2float(data[7*3], data[7*3 +1], data[7*3 + 2], gain[6]);
+		channel_8[0] = byte2float(data[8*3], data[8*3 +1], data[8*3 + 2], gain[7]);
 			
 		while (HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_RESET){}
 			
-		for (int i = 1; i<250; i++)
+		for (int i = 1; i<LENGTH_SAMPLES; i++)
 		{
 			while (HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_SET){}
 			
 			read_data_frame(data, SPI);
 
-			channel_X[i] = byte2float(data[channel*3], data[channel*3 +1], data[channel*3 + 2], gain);
+			channel_1[i] = byte2float(data[1*3], data[1*3 +1], data[1*3 + 2], gain[0]);
+			channel_2[i] = byte2float(data[2*3], data[2*3 +1], data[2*3 + 2], gain[1]);
+			channel_3[i] = byte2float(data[3*3], data[3*3 +1], data[3*3 + 2], gain[2]);
+			channel_4[i] = byte2float(data[4*3], data[4*3 +1], data[4*3 + 2], gain[3]);
+			channel_5[i] = byte2float(data[5*3], data[5*3 +1], data[5*3 + 2], gain[4]);
+			channel_6[i] = byte2float(data[6*3], data[6*3 +1], data[6*3 + 2], gain[5]);
+			channel_7[i] = byte2float(data[7*3], data[7*3 +1], data[7*3 + 2], gain[6]);
+			channel_8[i] = byte2float(data[8*3], data[8*3 +1], data[8*3 + 2], gain[7]);
 				
 			while (HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_RESET){}
 		}
@@ -517,7 +531,7 @@ float32_t byte2float (uint8_t data_23_16, uint8_t data_15_8, uint8_t data_7_0, u
 				update_bias_ref(data, SPI);
 			}
 		
-		for(int i = 2; i<250;)
+		for(int i = 2; i<LENGTH_SAMPLES;)
 		{
 			if 	(HAL_GPIO_ReadPin(A_DRDY_N_GPIO_Port, A_DRDY_N_Pin) == GPIO_PIN_RESET)
 			{

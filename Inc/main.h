@@ -95,6 +95,16 @@
 
 /* USER CODE BEGIN Private defines */
 
+#define BLINK_INTERVAL_SETUP 100;
+#define BLINK_INTERVAL_WAITING 500;
+#define BLINK_INTERVAL_SENDING 2000;
+
+// Defines relacionados con el filtro FIR
+#define LENGTH_SAMPLES  250
+#define SNR_THRESHOLD_F32    140.0f
+#define BLOCK_SIZE            32
+#define NUM_TAPS              29
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
